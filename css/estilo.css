@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    border: 1px solid #00adb8;
+    font-family: 'Noto Sans JP';
+    background-image: -webkit-linear-gradient( 90deg, rgb(64, 1, 180) 0%, rgb(159, 0, 191) 99%);
+}
+@media(max-height: 400px) {
+    section {
+        max-width: 100%
+    }
+}
+header {
+    color: #fff;
+    font-size: 20px;
+}
+input {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 344px;
+    height: 47px;
+    padding: 15px;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.titulo {
+    font-family: ;
+    color: #fff;
+}
+.datos {
+
+    border: 1px solid #00adb8;
+    padding: 10px 0;
+}
+.input{
+    width: 50%;
+    float: right;
+}
+
+.info {
+    width: 50%;
+    padding: 10px;
+}
+.botones {
+    width: 100%;
+}
+.btn_planetas {
+    border-radius: 20px;
+    background-color: rgb(254, 190, 54);
+    width: 176px;
+    height: 176px;
+    margin: 10px;
+}
+.resultado_planeta {}
+div {
+    border: 1px solid #00adb8;
+}
+.contenido {
+    background-color: ;
+    margin: 12.5%;
+    padding: 12.5%;
+    background-image: -webkit-linear-gradient( -59deg, rgb(255, 64, 134) 0%, rgb(134, 1, 190) 48%, rgb(1, 0, 242) 99%);
+    border-radius: 20px;
+}
