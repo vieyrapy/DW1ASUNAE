@@ -11,78 +11,82 @@
     </head>
     <body>
         <div class="layaout">
-            <header>
-                <h1>
-                    Descubre tu peso en el sistema solar
-                </h1>
-            </header>
-          
-                <div class="contenido">
-                    <div class="box label">
-                        <label>
-                            Nombre
-                        </label>
+            <div class="box">
+                <div class="calculadora">
+                    <header>
+                        <h1>
+                            Descubre tu peso en el sistema solar
+                        </h1>
+                    </header>
+                    <div class="contenido">
+                        <div class="box label">
+                            <label>
+                                Nombre
+                            </label>
+                        </div>
+                        <div class="box innf">
+                            <input id="nombre" type="text">
+                            </input>
+                        </div>
+                        <div class="box label">
+                            <label>
+                                Edad
+                            </label>
+                        </div>
+                        <div class="box innf">
+                            <input id="edad" type="number">
+                            </input>
+                        </div>
+                        <div class="box label">
+                            <label>
+                                Peso actual terrestre
+                            </label>
+                        </div>
+                        <div class="box innf">
+                            <input id="peso" type="number">
+                            </input>
+                        </div>
                     </div>
-                    <div class="box innf">
-                        <input id="nombre" type="text">
-                        </input>
+                    <div class="botones">
+                        <button class="btn_planetas" onclick="mercurio()">
+                            Mercurio
+                        </button>
+                        <button class="btn_planetas" onclick="venus()">
+                            Venus
+                        </button>
+                        <button class="btn_planetas" onclick="martes()">
+                            Martes
+                        </button>
+                        <button class="btn_planetas" onclick="jupiter()">
+                            Jupiter
+                        </button>
+                        <button class="btn_planetas" onclick="saturno()">
+                            Saturno
+                        </button>
+                        <button class="btn_planetas" onclick="urano()">
+                            Urano
+                        </button>
+                        <button class="btn_planetas" onclick="neptuno()">
+                            Neptuno
+                        </button>
+                        <button class="btn_planetas" onclick="pluton()">
+                            Plutón
+                        </button>
+                        <button class="btn_planetas" onclick="limpiar()">
+                            AC
+                        </button>
+                        <button class="btn_planetas" id="sajayin" onclick="planeta(this)">
+                            Sajayin
+                        </button>
                     </div>
-                    <div class="box label">
-                        <label>
-                            Edad
-                        </label>
-                    </div>
-                    <div class="box innf">
-                        <input id="edad" type="number">
-                        </input>
-                    </div>
-                    <div class="box label">
-                        <label>
-                            Peso actual terrestre
-                        </label>
-                    </div>
-                    <div class="box innf">
-                        <input id="peso" type="number">
-                        </input>
-                    </div>
-                </div>
-          
-            <div class="botones">
-                <button class="btn_planetas" onclick="mercurio()">
-                    Mercurio
-                </button>
-                <button class="btn_planetas" onclick="venus()">
-                    Venus
-                </button>
-                <button class="btn_planetas" onclick="martes()">
-                    Martes
-                </button>
-                <button class="btn_planetas" onclick="jupiter()">
-                    Jupiter
-                </button>
-                <button class="btn_planetas" onclick="saturno()">
-                    Saturno
-                </button>
-                <button class="btn_planetas" onclick="urano()">
-                    Urano
-                </button>
-                <button class="btn_planetas" onclick="neptuno()">
-                    Neptuno
-                </button>
-                <button class="btn_planetas" onclick="pluton()">
-                    Plutón
-                </button>
-                <button class="btn_planetas" onclick="limpiar()">
-                    AC
-                </button>
-                <button class="btn_planetas" id="sajayin" onclick="planeta(this)">
-                    Sajayin
-                </button>
-                <div class="resultado_planeta">
-                    <h1 id="resultado">
-                    </h1>
-                </div>
+                </div>    
             </div>
+
+            <div class="box resultados">
+               	<h1 id="resultado">
+                </h1>
+            </div>
+
             <script type="text/javascript">
                 var g_tierra = 9.8;
 				var g_mercurio = 3.7;
@@ -94,23 +98,24 @@
 				var g_neptuno = 11.15;
 				var g_pluton = 30.80;
 		
-			function martes(){
-				var peso = document.getElementById('peso').value;
-				var edad = document.getElementById('edad').value;
-				var nombre = document.getElementById('nombre').value;
-				var planeta = "Marte";
-				peso = parseInt(peso);
-				calcular = (peso * g_martes)/g_tierra;
+				function martes(){
+					var peso = document.getElementById('peso').value;
+					var edad = document.getElementById('edad').value;
+					var nombre = document.getElementById('nombre').value;
+					var planeta = "Marte";
+					peso = parseInt(peso);
+					calcular = (peso * g_martes)/g_tierra;
 
-				//console.log(calcular);
-				//document.getElementById("resultado").innerHTML = calcular;
-				//document.getElementById("tu_nombre").innerHTML = nombre;
-				//document.getElementById("tu_edad").innerHTML = edad;
-				//document.getElementById("tu_planeta").innerHTML = planeta;
-				document.getElementById("resultado").innerHTML = " Hola " + nombre + " tienes " + edad +  " años y tu peso actual en " + planeta + " es de " + calcular + " kilos" ;
-				
-			}
+					//console.log(calcular);
+					//document.getElementById("resultado").innerHTML = calcular;
+					//document.getElementById("tu_nombre").innerHTML = nombre;
+					//document.getElementById("tu_edad").innerHTML = edad;
+					//document.getElementById("tu_planeta").innerHTML = planeta;
+					document.getElementById('resultado').innerHTML = ' Hola ' + nombre + ', tienes ' + edad +  ' años y tu peso actual en <div class="nombre_planeta"> ' + planeta + ' </div> es de ' + calcular + ' kilos' ;
+					
+				}
             </script>
+
             <footer>
                 <p>
                     Este es un caso de practica de CSS HTML Y JS
