@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Tu peso en el sistema solar</title>
-	<link rel="stylesheet" href="css/estilo.css">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-
-</head>
-<body>
-	<div class="contenido">
-	<header>
-		<h1> Descubre tu peso en el sistema solar</h1>
-	</header>
-	
-	
-		<div class="datos">
-			<div class="info">
-				<label>Nombre</label>
-				<label>Edad</label>
-				<label>Peso Actual</label>
-				
-			</div>
-
-			<div class="input">
-				<input type="text" id="nombre">
-				<input type="number" id="edad">
-				<input type="number" id="peso">
-			</div>
-			
-			
-		</div>
-
-		<div class="botones">
-				<button class="btn_planetas" onClick="mercurio()"> Mercurio</button>
-				<button class="btn_planetas" onClick="venus()"> Venus</button>
-				<button class="btn_planetas" onClick="martes()"> Martes</button>
-				<button class="btn_planetas" onClick="jupiter()"> Jupiter</button>
-				<button class="btn_planetas" onClick="saturno()"> Saturno</button>
-				<button class="btn_planetas" onClick="urano()">Urano</button>
-				<button class="btn_planetas" onClick="neptuno()">Neptuno</button>
-				<button class="btn_planetas" onClick="pluton()">Plutón</button>
-				<button class="btn_planetas" onClick="limpiar()">AC</button>
-
-				<button class="btn_planetas"  id="sajayin" onClick="planeta(this)">Sajayin</button>
-		
-		<div class="resultado_planeta">
-			<h1 id="resultado"></h1>
-		</div>
-
-	</div>
-
-<script type="text/javascript">
-
-				var g_tierra = 9.8;
+    <head>
+        <title>
+            Tu peso en el sistema solar
+        </title>
+        <link href="css/estilo.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+            </link>
+        </link>
+    </head>
+    <body>
+        <div class="layaout">
+            <header>
+                <h1>
+                    Descubre tu peso en el sistema solar
+                </h1>
+            </header>
+          
+                <div class="contenido">
+                    <div class="box label">
+                        <label>
+                            Nombre
+                        </label>
+                    </div>
+                    <div class="box innf">
+                        <input id="nombre" type="text">
+                        </input>
+                    </div>
+                    <div class="box label">
+                        <label>
+                            Edad
+                        </label>
+                    </div>
+                    <div class="box innf">
+                        <input id="edad" type="number">
+                        </input>
+                    </div>
+                    <div class="box label">
+                        <label>
+                            Peso actual terrestre
+                        </label>
+                    </div>
+                    <div class="box innf">
+                        <input id="peso" type="number">
+                        </input>
+                    </div>
+                </div>
+          
+            <div class="botones">
+                <button class="btn_planetas" onclick="mercurio()">
+                    Mercurio
+                </button>
+                <button class="btn_planetas" onclick="venus()">
+                    Venus
+                </button>
+                <button class="btn_planetas" onclick="martes()">
+                    Martes
+                </button>
+                <button class="btn_planetas" onclick="jupiter()">
+                    Jupiter
+                </button>
+                <button class="btn_planetas" onclick="saturno()">
+                    Saturno
+                </button>
+                <button class="btn_planetas" onclick="urano()">
+                    Urano
+                </button>
+                <button class="btn_planetas" onclick="neptuno()">
+                    Neptuno
+                </button>
+                <button class="btn_planetas" onclick="pluton()">
+                    Plutón
+                </button>
+                <button class="btn_planetas" onclick="limpiar()">
+                    AC
+                </button>
+                <button class="btn_planetas" id="sajayin" onclick="planeta(this)">
+                    Sajayin
+                </button>
+                <div class="resultado_planeta">
+                    <h1 id="resultado">
+                    </h1>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var g_tierra = 9.8;
 				var g_mercurio = 3.7;
 				var g_venus = 8.87;
 				var g_martes = 3.71;
@@ -77,11 +110,12 @@
 				document.getElementById("resultado").innerHTML = " Hola " + nombre + " tienes " + edad +  " años y tu peso actual en " + planeta + " es de " + calcular + " kilos" ;
 				
 			}
-			
-	
-</script>
-<footer><p>Este es un caso de practica de CSS HTML Y JS</p></footer>
-</div>
-</body>
+            </script>
+            <footer>
+                <p>
+                    Este es un caso de practica de CSS HTML Y JS
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>
-
